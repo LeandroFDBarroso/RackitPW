@@ -8,8 +8,9 @@ A RackIT é um sistema de gestão de inventario doméstico feito para facilitar 
 ## Repository organization
 
 _Please help reader navigate around describing how the repository is organized by providing links_
-* **Source code** is in the [lb4-rackit](https://github.com/exemploTrabalho/report/src).
-* Report chapters are in [doc folder](https://github.com/exemploTrabalho/report/doc).
+* Pode encontrar o **codigo** em [lb4-rackit](https://github.com/RackITPW/report/tree/main/lb4-rackit).
+* Pode encontrar a **base de dados** em [db](https://github.com/RackITPW/report/tree/main/lb4-rackit).
+* Pode encontrar outros documentos importantes em **docs** em [db](https://github.com/RackITPW/report/tree/main/lb4-rackit).
 
 ## Gallery
 
@@ -49,5 +50,6 @@ _Please add at least on section (a file) per Chapter. But you can add more._
 * Chapter 4: [Presentation](doc/c4.md)
 
 ## Team
-* Marco Amaro Oliveira [@MarcoOliveira](https://github.com/marcoamarooliveira)
+* Diogo Pereira [@diogopereira00](https://github.com/diogopereira00)
+* Leandro Barroso [@LeandroFDBarroso](https://github.com/LeandroFDBarroso) 
 * Other team members
