@@ -5,8 +5,6 @@ Repository to host the project developed for 'some class', a fisrt year subject 
 ## Descrição
 A RackIT é um sistema de gestão de inventario doméstico feito para facilitar a vida do utilizador.Pretende poupar tempo e dinheiro do utilizador verificando o que já possui e a sua validade e quantidade, sugerindo assim a lista de compras (de acordo com o que é comprado mais frequentemente) e também receitas com os produtos alimentares de forma a reduzir o desperdício. O sistema aprende com o utilizador, ajustando-se assim as suas necessidades, como um assistente pessoal.
 
-An example report using markdown on Github. This documentation is writen using [Markdown](https://www.markdownguide.org/). Here is a [link to the basic syntax](https://www.markdownguide.org/basic-syntax), but an [extended syntax](https://www.markdownguide.org/extended-syntax/) is also available. If you're starting with Markdown, you may want to try a [Markdown Tutorial](https://www.markdowntutorial.com/) and read the [getting started](https://www.markdownguide.org/getting-started/) section.
-
 ## Repository organization
 
 _Please help reader navigate around describing how the repository is organized by providing links_
