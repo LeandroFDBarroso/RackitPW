@@ -6,7 +6,7 @@ A RackIT é um sistema de gestão de inventario doméstico feito para facilitar 
 
 ## Repository organization
 
-* Pode encontrar o **codigo** em [lb4-rackit](https://github.com/RackITPW/report/tree/main/lb4-rackit).
+* Pode encontrar o **codigo fonte** em [lb4-rackit](https://github.com/RackITPW/report/tree/main/lb4-rackit).
 * Pode encontrar a **base de dados** em [db](https://github.com/RackITPW/report/tree/main/lb4-rackit).
 * Pode encontrar outros documentos importantes em **docs** em [db](https://github.com/RackITPW/report/tree/main/lb4-rackit).
 
@@ -50,4 +50,3 @@ _FALTA_
 ## Team
 * Diogo Pereira [@diogopereira00](https://github.com/diogopereira00)
 * Leandro Barroso [@LeandroFDBarroso](https://github.com/LeandroFDBarroso) 
-* Other team members
