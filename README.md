@@ -33,13 +33,13 @@ A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull 
 _Please add at least on section (a file) per Chapter. But you can add more._
 
 ### Project presentation
-* Chapter 1: [Project presentation](doc/c1.md)
+* Chapter 1: [Project presentation](https://github.com/RackITPW/report/blob/main/docs/c1.md)
 ### User Interface 
-* Chapter 2: [User Interface Prototype and Sitemap](doc/c2.md)
+* Chapter 2: [User Interface Prototype and Sitemap](https://github.com/RackITPW/report/blob/main/docs/c2.md)
 ### Product
-* Chapter 3: [Product](doc/c3.md)
+* Chapter 3: [Product](https://github.com/RackITPW/report/blob/main/docs/c3.md)
 ### Presentation
-* Chapter 4: [Presentation](doc/c4.md)
+* Chapter 4: [Presentation](https://github.com/RackITPW/report/blob/main/docs/c4.md)
 
 ## Team
 * Diogo Pereira [@diogopereira00](https://github.com/diogopereira00)
