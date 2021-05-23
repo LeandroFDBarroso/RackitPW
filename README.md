@@ -33,8 +33,8 @@ Pagina Inicial |  Explorer
 
 ### Apresentação do Projeto
 * 1: [Apresentação do Projeto](https://github.com/RackITPW/report/blob/main/docs/c1.md)
-### User Interface 
-* 2: [User Interface ](https://github.com/RackITPW/report/blob/main/docs/c2.md)
+### Interface do Utilizador
+* 2: [Interface do Utilizador](https://github.com/RackITPW/report/blob/main/docs/c2.md)
 ### Produto
 * 3: [Produto](https://github.com/RackITPW/report/blob/main/docs/c3.md)
 ### Apresentação
