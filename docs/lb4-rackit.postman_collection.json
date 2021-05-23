@@ -1,0 +1,4346 @@
+{
+	"info": {
+		"_postman_id": "ecdea0f4-5d7c-43f6-bb0f-4fb90532cb68",
+		"name": "lb4-rackit",
+		"description": "Projeto para programação WEB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "categorias",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Categoria Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nomeCategoria\": \"dolore esse incididunt\",\n    \"idCategoria\": 31582364.87432787,\n    \"categoriaID\": -54341645.05893033\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categorias/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nomeCategoria\": \"dolore esse incididunt\",\n    \"idCategoria\": 31582364.87432787,\n    \"categoriaID\": -54341645.05893033\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Categoria Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idCategoria\": 27483932.9084792,\n    \"nomeCategoria\": \"labore Duis magna ipsum\",\n    \"categoriaID\": -87336902.48710361\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categorias/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idCategoria\": 27483932.9084792,\n    \"nomeCategoria\": \"labore Duis magna ipsum\",\n    \"categoriaID\": -87336902.48710361\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Categoria Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categorias/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Categorias model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"nomeCategoria\": \"officia amet ex\",\n \"idCategoria\": 3349322.330823809,\n \"categoriaID\": 10236444.832121268,\n \"categoria\": {\n  \"nome\": \"nulla\",\n  \"categoriaID\": 69415175.77698287,\n  \"idProduto\": 93539117.2255227,\n  \"listaProdutosID\": 69779415.73975804,\n  \"infoProdutos\": [\n   {\n    \"idProduto\": -35099420.85079585,\n    \"id\": 14569326.00437963,\n    \"dataCompra\": \"1998-09-04T20:09:25.916Z\",\n    \"dataValidade\": \"1957-12-27T07:36:32.907Z\",\n    \"compradoPor\": -58620082.066229664,\n    \"compradoA\": -81944332.64927983,\n    \"precoNormal\": 29299905.315645084,\n    \"armazenadoEm\": 70561844.07760435,\n    \"armazem\": {\n     \"nome\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"idSeccao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"descricao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"imagem\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    }\n   },\n   {\n    \"idProduto\": 56698967.334578305,\n    \"id\": 29892532.028260365,\n    \"dataCompra\": \"1962-09-04T19:27:49.357Z\",\n    \"dataValidade\": \"2016-07-11T18:44:08.177Z\",\n    \"compradoPor\": -96449006.7704126,\n    \"compradoA\": -24239364.86296104,\n    \"precoNormal\": 9002209.364977837,\n    \"armazenadoEm\": -18141558.692073762,\n    \"armazem\": {\n     \"nome\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"idSeccao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"descricao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"imagem\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    }\n   }\n  ],\n  \"listaProdutos\": {\n   \"nome\": \"ex aliqua in\",\n   \"id\": -97572908.12477036,\n   \"utilizadoresId\": 60821847.388494104,\n   \"produtos\": [\n    {\n     \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n    },\n    {\n     \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n    }\n   ]\n  }\n }\n}"
+								}
+							]
+						},
+						{
+							"name": "Categoria Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categorias/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Categorias Produtos Controller.get Produtos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categorias/:id/produtos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias",
+										":id",
+										"produtos"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Produtos belonging to Categorias",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id/produtos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id",
+												"produtos"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n {\n  \"nome\": \"Duis nisi c\",\n  \"categoriaID\": 59698709.44236669,\n  \"idProduto\": 81756754.16062331,\n  \"listaProdutosID\": 31704871.182380363\n },\n {\n  \"nome\": \"reprehenderit anim aute quis do\",\n  \"categoriaID\": -21573295.31363903,\n  \"idProduto\": 72036504.3623636,\n  \"listaProdutosID\": 98359152.33472154\n }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Categoria Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nomeCategoria\": \"in sit anim\",\n    \"categoriaID\": -27771278.630113333\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/categorias",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Categorias model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nomeCategoria\": \"in sit anim\",\n    \"categoriaID\": -27771278.630113333\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categorias",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"nomeCategoria\": \"dolore esse incididunt\",\n \"idCategoria\": 31582364.87432787,\n \"categoriaID\": -54341645.05893033\n}"
+						}
+					]
+				},
+				{
+					"name": "Categoria Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idCategoria\": 27483932.9084792,\n    \"nomeCategoria\": \"labore Duis magna ipsum\",\n    \"categoriaID\": -87336902.48710361\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/categorias?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categorias"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Categorias PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idCategoria\": 27483932.9084792,\n    \"nomeCategoria\": \"labore Duis magna ipsum\",\n    \"categoriaID\": -87336902.48710361\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categorias?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				},
+				{
+					"name": "Categoria Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/categorias?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categorias"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Categorias model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categorias?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"nomeCategoria\": \"do aliqua pariatur magna in\",\n  \"idCategoria\": -98465388.04661523,\n  \"categoriaID\": 26242063.715260193,\n  \"categoria\": {\n   \"nome\": \"incidid\",\n   \"categoriaID\": -77605436.33015326,\n   \"idProduto\": -10068245.02748023,\n   \"listaProdutosID\": -93571764.46741687,\n   \"infoProdutos\": [\n    {\n     \"idProduto\": 89364940.18515867,\n     \"id\": -48472127.13648883,\n     \"dataCompra\": \"1999-10-14T22:15:50.756Z\",\n     \"dataValidade\": \"2010-11-18T01:41:17.041Z\",\n     \"compradoPor\": -14296810.393801346,\n     \"compradoA\": 83509116.22464797,\n     \"precoNormal\": 79338608.88438219,\n     \"armazenadoEm\": 12294968.68803151,\n     \"armazem\": {\n      \"nome\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"idSeccao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"descricao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imagem\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    },\n    {\n     \"idProduto\": 14144905.079579443,\n     \"id\": -88408281.94444881,\n     \"dataCompra\": \"1959-09-17T19:17:18.822Z\",\n     \"dataValidade\": \"2005-10-09T09:26:10.535Z\",\n     \"compradoPor\": 9788658.795298666,\n     \"compradoA\": 36399081.277219504,\n     \"precoNormal\": -10501595.371465817,\n     \"armazenadoEm\": 50118392.88428095,\n     \"armazem\": {\n      \"nome\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"idSeccao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"descricao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imagem\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    }\n   ],\n   \"listaProdutos\": {\n    \"nome\": \"aute in amet ullamco cillum\",\n    \"id\": -69205986.98450151,\n    \"utilizadoresId\": 27245511.15413232,\n    \"produtos\": [\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     },\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     }\n    ]\n   }\n  }\n },\n {\n  \"nomeCategoria\": \"esse\",\n  \"idCategoria\": -46676491.07384473,\n  \"categoriaID\": 29132176.073921338,\n  \"categoria\": {\n   \"nome\": \"ut ipsum fugi\",\n   \"categoriaID\": -76252564.51902005,\n   \"idProduto\": -17293503.934713423,\n   \"listaProdutosID\": -17024327.27219887,\n   \"infoProdutos\": [\n    {\n     \"idProduto\": 47648906.71903908,\n     \"id\": -15292458.681509122,\n     \"dataCompra\": \"1972-11-10T07:06:07.323Z\",\n     \"dataValidade\": \"1948-06-04T03:39:08.609Z\",\n     \"compradoPor\": 62014820.86397517,\n     \"compradoA\": 91253574.85001814,\n     \"precoNormal\": 19046735.051583856,\n     \"armazenadoEm\": -88788898.96384522,\n     \"armazem\": {\n      \"nome\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"idSeccao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"descricao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imagem\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    },\n    {\n     \"idProduto\": 20573827.34667304,\n     \"id\": 47386399.5859057,\n     \"dataCompra\": \"1960-10-24T13:33:34.009Z\",\n     \"dataValidade\": \"1994-11-09T08:54:05.624Z\",\n     \"compradoPor\": 40657898.002625704,\n     \"compradoA\": -11843953.17393747,\n     \"precoNormal\": -39093017.313693054,\n     \"armazenadoEm\": 61756264.76889381,\n     \"armazem\": {\n      \"nome\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"idSeccao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"descricao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imagem\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    }\n   ],\n   \"listaProdutos\": {\n    \"nome\": \"ullamco reprehenderit pariatur\",\n    \"id\": -25785022.596965715,\n    \"utilizadoresId\": 62148820.21068427,\n    \"produtos\": [\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     },\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     }\n    ]\n   }\n  }\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Categoria Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/categorias/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categorias",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Categorias model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categorias/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "info-produtos",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Infoprodutos Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idProduto\": -8316267.242819279,\n    \"id\": 59366729.05535084,\n    \"dataCompra\": \"1996-07-21T04:29:08.401Z\",\n    \"dataValidade\": \"1950-05-20T22:20:07.815Z\",\n    \"compradoPor\": -99745725.28725538,\n    \"compradoA\": 61068136.53600258,\n    \"precoNormal\": -24551212.35494256,\n    \"armazenadoEm\": 67548838.85940078\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/info-produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"info-produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idProduto\": -8316267.242819279,\n    \"id\": 59366729.05535084,\n    \"dataCompra\": \"1996-07-21T04:29:08.401Z\",\n    \"dataValidade\": \"1950-05-20T22:20:07.815Z\",\n    \"compradoPor\": -99745725.28725538,\n    \"compradoA\": 61068136.53600258,\n    \"precoNormal\": -24551212.35494256,\n    \"armazenadoEm\": 67548838.85940078\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/info-produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"info-produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Infoprodutos Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": -58241290.60294605,\n    \"idProduto\": -20281998.956568435,\n    \"dataCompra\": \"1978-05-31T07:31:48.001Z\",\n    \"dataValidade\": \"1980-06-02T04:30:11.870Z\",\n    \"compradoPor\": 92395881.71696463,\n    \"compradoA\": 49560976.05195263,\n    \"precoNormal\": 88384767.35424373,\n    \"armazenadoEm\": 38904054.58415857\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/info-produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"info-produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -58241290.60294605,\n    \"idProduto\": -20281998.956568435,\n    \"dataCompra\": \"1978-05-31T07:31:48.001Z\",\n    \"dataValidade\": \"1980-06-02T04:30:11.870Z\",\n    \"compradoPor\": 92395881.71696463,\n    \"compradoA\": 49560976.05195263,\n    \"precoNormal\": 88384767.35424373,\n    \"armazenadoEm\": 38904054.58415857\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/info-produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"info-produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Infoprodutos Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/info-produtos/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"info-produtos",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "InfoProdutos model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/info-produtos/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"info-produtos",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idProduto\": 8562923.08003442,\n \"id\": -60998558.03932663,\n \"dataCompra\": \"1996-12-30T02:20:42.949Z\",\n \"dataValidade\": \"1977-11-04T04:24:35.256Z\",\n \"compradoPor\": -10310513.904131204,\n \"compradoA\": -45368070.941038854,\n \"precoNormal\": 53282006.154681176,\n \"armazenadoEm\": -26207752.892378762,\n \"armazem\": {\n  \"nome\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  },\n  \"idSeccao\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  },\n  \"descricao\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  },\n  \"imagem\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  }\n }\n}"
+								}
+							]
+						},
+						{
+							"name": "Infoprodutos Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/info-produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"info-produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/info-produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"info-produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Info Produtos Seccao Controller.get Seccao",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/info-produtos/:id/seccao",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"info-produtos",
+										":id",
+										"seccao"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Seccao belonging to InfoProdutos",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/info-produtos/:id/seccao",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"info-produtos",
+												":id",
+												"seccao"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n {\n  \"nome\": \"sunt\",\n  \"idSeccao\": -60822622.87321099,\n  \"descricao\": \"culpa esse in magna\",\n  \"imagem\": \"occaecat laboris\"\n },\n {\n  \"nome\": \"se\",\n  \"idSeccao\": -26016861.134234443,\n  \"descricao\": \"dolore minim Duis elit eiusmod\",\n  \"imagem\": \"ipsum aute\"\n }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Infoprodutos Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idProduto\": -20613054.02384557,\n    \"dataCompra\": \"1958-01-13T04:30:33.664Z\",\n    \"dataValidade\": \"2001-04-24T01:18:58.162Z\",\n    \"compradoPor\": 82590601.29727152,\n    \"compradoA\": -17679394.539185673,\n    \"precoNormal\": 83363370.7134116,\n    \"armazenadoEm\": -50146291.574340165\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/info-produtos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"info-produtos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "InfoProdutos model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idProduto\": -20613054.02384557,\n    \"dataCompra\": \"1958-01-13T04:30:33.664Z\",\n    \"dataValidade\": \"2001-04-24T01:18:58.162Z\",\n    \"compradoPor\": 82590601.29727152,\n    \"compradoA\": -17679394.539185673,\n    \"precoNormal\": 83363370.7134116,\n    \"armazenadoEm\": -50146291.574340165\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/info-produtos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"info-produtos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"idProduto\": -8316267.242819279,\n \"id\": 59366729.05535084,\n \"dataCompra\": \"1996-07-21T04:29:08.401Z\",\n \"dataValidade\": \"1950-05-20T22:20:07.815Z\",\n \"compradoPor\": -99745725.28725538,\n \"compradoA\": 61068136.53600258,\n \"precoNormal\": -24551212.35494256,\n \"armazenadoEm\": 67548838.85940078\n}"
+						}
+					]
+				},
+				{
+					"name": "Infoprodutos Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": -58241290.60294605,\n    \"idProduto\": -20281998.956568435,\n    \"dataCompra\": \"1978-05-31T07:31:48.001Z\",\n    \"dataValidade\": \"1980-06-02T04:30:11.870Z\",\n    \"compradoPor\": 92395881.71696463,\n    \"compradoA\": 49560976.05195263,\n    \"precoNormal\": 88384767.35424373,\n    \"armazenadoEm\": 38904054.58415857\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/info-produtos?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"info-produtos"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "InfoProdutos PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": -58241290.60294605,\n    \"idProduto\": -20281998.956568435,\n    \"dataCompra\": \"1978-05-31T07:31:48.001Z\",\n    \"dataValidade\": \"1980-06-02T04:30:11.870Z\",\n    \"compradoPor\": 92395881.71696463,\n    \"compradoA\": 49560976.05195263,\n    \"precoNormal\": 88384767.35424373,\n    \"armazenadoEm\": 38904054.58415857\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/info-produtos?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"info-produtos"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				},
+				{
+					"name": "Infoprodutos Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/info-produtos?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"info-produtos"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of InfoProdutos model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/info-produtos?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"info-produtos"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"idProduto\": -33214803.51971995,\n  \"id\": -95653917.34716515,\n  \"dataCompra\": \"2000-05-21T06:57:13.996Z\",\n  \"dataValidade\": \"1963-05-30T09:50:48.311Z\",\n  \"compradoPor\": 91083737.61580545,\n  \"compradoA\": -77861677.54612255,\n  \"precoNormal\": -24826174.689332128,\n  \"armazenadoEm\": -78101039.42013021,\n  \"armazem\": {\n   \"nome\": {\n    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n   },\n   \"idSeccao\": {\n    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n   },\n   \"descricao\": {\n    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n   },\n   \"imagem\": {\n    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n   }\n  }\n },\n {\n  \"idProduto\": 98838546.70872575,\n  \"id\": -44921221.19170516,\n  \"dataCompra\": \"2002-05-19T06:26:26.279Z\",\n  \"dataValidade\": \"2000-07-10T11:46:38.282Z\",\n  \"compradoPor\": -1866219.0360283107,\n  \"compradoA\": 74505312.41497028,\n  \"precoNormal\": 49205240.75558177,\n  \"armazenadoEm\": -47933632.04768761,\n  \"armazem\": {\n   \"nome\": {\n    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n   },\n   \"idSeccao\": {\n    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n   },\n   \"descricao\": {\n    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n   },\n   \"imagem\": {\n    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n   }\n  }\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Infoprodutos Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/info-produtos/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"info-produtos",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "InfoProdutos model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/info-produtos/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"info-produtos",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "lista-produtos",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "produtos",
+							"item": [
+								{
+									"name": "Lista Produtos Produtos Controller.create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"consect\",\n    \"categoriaID\": -60544023.78334873,\n    \"listaProdutosID\": 9259404.083755791\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/lista-produtos/:id/produtos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"lista-produtos",
+												":id",
+												"produtos"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "ListaProdutos model instance",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"nome\": \"consect\",\n    \"categoriaID\": -60544023.78334873,\n    \"listaProdutosID\": 9259404.083755791\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/lista-produtos/:id/produtos",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"lista-produtos",
+														":id",
+														"produtos"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"nome\": \"Ut reprehenderit offi\",\n \"categoriaID\": -20699466.591325685,\n \"idProduto\": 42324091.25748137,\n \"listaProdutosID\": -59485660.52262376\n}"
+										}
+									]
+								},
+								{
+									"name": "Lista Produtos Produtos Controller.patch",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idProduto\": 63273163.94081169,\n    \"nome\": \"adipisicing ad culpa in\",\n    \"categoriaID\": -22140189.10196565,\n    \"listaProdutosID\": 75827146.96070191\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/lista-produtos/:id/produtos?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"lista-produtos",
+												":id",
+												"produtos"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "ListaProdutos.Produtos PATCH success count",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"idProduto\": 63273163.94081169,\n    \"nome\": \"adipisicing ad culpa in\",\n    \"categoriaID\": -22140189.10196565,\n    \"listaProdutosID\": 75827146.96070191\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/lista-produtos/:id/produtos?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"lista-produtos",
+														":id",
+														"produtos"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": 97401736.57016325\n}"
+										}
+									]
+								},
+								{
+									"name": "Lista Produtos Produtos Controller.find",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/lista-produtos/:id/produtos?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"lista-produtos",
+												":id",
+												"produtos"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Array of ListaProdutos has many Produtos",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/lista-produtos/:id/produtos?filter=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"lista-produtos",
+														":id",
+														"produtos"
+													],
+													"query": [
+														{
+															"key": "filter",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n {\n  \"nome\": \"Duis nisi c\",\n  \"categoriaID\": 59698709.44236669,\n  \"idProduto\": 81756754.16062331,\n  \"listaProdutosID\": 31704871.182380363\n },\n {\n  \"nome\": \"reprehenderit anim aute quis do\",\n  \"categoriaID\": -21573295.31363903,\n  \"idProduto\": 72036504.3623636,\n  \"listaProdutosID\": 98359152.33472154\n }\n]"
+										}
+									]
+								},
+								{
+									"name": "Lista Produtos Produtos Controller.delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/lista-produtos/:id/produtos?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"lista-produtos",
+												":id",
+												"produtos"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "ListaProdutos.Produtos DELETE success count",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/lista-produtos/:id/produtos?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"lista-produtos",
+														":id",
+														"produtos"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": 97401736.57016325\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Listaprodutos Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"occaecat nostrud nulla in incididunt\",\n    \"id\": -37672575.50193723,\n    \"utilizadoresId\": -85800889.07035503\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/lista-produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"lista-produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"occaecat nostrud nulla in incididunt\",\n    \"id\": -37672575.50193723,\n    \"utilizadoresId\": -85800889.07035503\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/lista-produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"lista-produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Listaprodutos Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": -13275329.958368465,\n    \"nome\": \"voluptate proident\",\n    \"utilizadoresId\": -67539534.95825842\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/lista-produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"lista-produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -13275329.958368465,\n    \"nome\": \"voluptate proident\",\n    \"utilizadoresId\": -67539534.95825842\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/lista-produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"lista-produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Listaprodutos Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/lista-produtos/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"lista-produtos",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ListaProdutos model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/lista-produtos/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"lista-produtos",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"nome\": \"et aliqua est\",\n \"id\": -22369222.69761367,\n \"utilizadoresId\": -20606044.73339902,\n \"produtos\": [\n  {\n   \"nome\": \"nostrud in enim ut dolore\",\n   \"categoriaID\": 51354786.29694536,\n   \"idProduto\": -82206092.90982637,\n   \"listaProdutosID\": 8074701.553316683,\n   \"infoProdutos\": [\n    {\n     \"idProduto\": 80107996.42649326,\n     \"id\": 27652496.4070044,\n     \"dataCompra\": \"1968-09-05T23:34:09.855Z\",\n     \"dataValidade\": \"1962-11-05T17:39:10.956Z\",\n     \"compradoPor\": -86415228.13796541,\n     \"compradoA\": -88679202.0539763,\n     \"precoNormal\": 60525944.20051798,\n     \"armazenadoEm\": -31225083.82621771,\n     \"armazem\": {\n      \"nome\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"idSeccao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"descricao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imagem\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    },\n    {\n     \"idProduto\": 25872416.00357464,\n     \"id\": 14089944.21630916,\n     \"dataCompra\": \"2019-02-05T14:27:34.971Z\",\n     \"dataValidade\": \"1979-12-11T00:01:15.677Z\",\n     \"compradoPor\": -11365442.092705801,\n     \"compradoA\": -64220043.07989804,\n     \"precoNormal\": 96997003.52708799,\n     \"armazenadoEm\": -97665486.22198257,\n     \"armazem\": {\n      \"nome\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"idSeccao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"descricao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imagem\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    }\n   ],\n   \"listaProdutos\": {\n    \"nome\": \"est voluptate sunt\",\n    \"id\": -57481336.962334014,\n    \"utilizadoresId\": 93050184.48266548,\n    \"produtos\": [\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     },\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     }\n    ]\n   }\n  },\n  {\n   \"nome\": \"minim aliquip pariatur\",\n   \"categoriaID\": 25913282.59617281,\n   \"idProduto\": -30155737.467127293,\n   \"listaProdutosID\": -55286740.033595815,\n   \"infoProdutos\": [\n    {\n     \"idProduto\": 31732959.542759567,\n     \"id\": -96290382.56424303,\n     \"dataCompra\": \"1970-09-16T17:35:03.154Z\",\n     \"dataValidade\": \"1946-07-29T22:58:36.297Z\",\n     \"compradoPor\": -26827662.1003765,\n     \"compradoA\": -4407917.659237534,\n     \"precoNormal\": -48932707.495674424,\n     \"armazenadoEm\": 37431473.07361442,\n     \"armazem\": {\n      \"nome\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"idSeccao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"descricao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imagem\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    },\n    {\n     \"idProduto\": 49382649.22854757,\n     \"id\": 97291183.60461846,\n     \"dataCompra\": \"2016-03-14T06:52:39.938Z\",\n     \"dataValidade\": \"1942-01-03T12:48:06.900Z\",\n     \"compradoPor\": -40419896.70721571,\n     \"compradoA\": 9199409.623173699,\n     \"precoNormal\": -33942911.65453009,\n     \"armazenadoEm\": -47014162.351127855,\n     \"armazem\": {\n      \"nome\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"idSeccao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"descricao\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"imagem\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    }\n   ],\n   \"listaProdutos\": {\n    \"nome\": \"velit consequat\",\n    \"id\": -59080913.57458165,\n    \"utilizadoresId\": -65226.72279624641,\n    \"produtos\": [\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     },\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     }\n    ]\n   }\n  }\n ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Listaprodutos Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/lista-produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"lista-produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/lista-produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"lista-produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Listaprodutos Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"occaecat irure eu proident\",\n    \"utilizadoresId\": -42835044.00620162\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/lista-produtos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"lista-produtos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ListaProdutos model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"occaecat irure eu proident\",\n    \"utilizadoresId\": -42835044.00620162\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/lista-produtos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"lista-produtos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"nome\": \"occaecat nostrud nulla in incididunt\",\n \"id\": -37672575.50193723,\n \"utilizadoresId\": -85800889.07035503\n}"
+						}
+					]
+				},
+				{
+					"name": "Listaprodutos Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": -13275329.958368465,\n    \"nome\": \"voluptate proident\",\n    \"utilizadoresId\": -67539534.95825842\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/lista-produtos?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"lista-produtos"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ListaProdutos PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": -13275329.958368465,\n    \"nome\": \"voluptate proident\",\n    \"utilizadoresId\": -67539534.95825842\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/lista-produtos?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"lista-produtos"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				},
+				{
+					"name": "Listaprodutos Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/lista-produtos?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"lista-produtos"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of ListaProdutos model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/lista-produtos?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"lista-produtos"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"nome\": \"elit culpa voluptate aliquip\",\n  \"id\": -36085503.643064335,\n  \"utilizadoresId\": -13451426.859070852,\n  \"produtos\": [\n   {\n    \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n   },\n   {\n    \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n   }\n  ]\n },\n {\n  \"nome\": \"aliqua sit consectetur\",\n  \"id\": 41820623.138831705,\n  \"utilizadoresId\": 59486170.47791797,\n  \"produtos\": [\n   {\n    \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n   },\n   {\n    \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n   }\n  ]\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Listaprodutos Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/lista-produtos/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"lista-produtos",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ListaProdutos model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/lista-produtos/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"lista-produtos",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "produtos",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "info-produtos",
+							"item": [
+								{
+									"name": "Produtos Info Produtos Controller.create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idProduto\": 98701481.7173827,\n    \"dataCompra\": \"1983-03-21T18:09:03.698Z\",\n    \"dataValidade\": \"1971-05-08T12:16:03.523Z\",\n    \"compradoPor\": 14277838.46750912,\n    \"compradoA\": -16966239.282756448,\n    \"precoNormal\": -67118915.73370834,\n    \"armazenadoEm\": 10833964.97045128\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id/info-produtos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id",
+												"info-produtos"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Produtos model instance",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"idProduto\": 98701481.7173827,\n    \"dataCompra\": \"1983-03-21T18:09:03.698Z\",\n    \"dataValidade\": \"1971-05-08T12:16:03.523Z\",\n    \"compradoPor\": 14277838.46750912,\n    \"compradoA\": -16966239.282756448,\n    \"precoNormal\": -67118915.73370834,\n    \"armazenadoEm\": 10833964.97045128\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/produtos/:id/info-produtos",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"produtos",
+														":id",
+														"info-produtos"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"idProduto\": -8316267.242819279,\n \"id\": 59366729.05535084,\n \"dataCompra\": \"1996-07-21T04:29:08.401Z\",\n \"dataValidade\": \"1950-05-20T22:20:07.815Z\",\n \"compradoPor\": -99745725.28725538,\n \"compradoA\": 61068136.53600258,\n \"precoNormal\": -24551212.35494256,\n \"armazenadoEm\": 67548838.85940078\n}"
+										}
+									]
+								},
+								{
+									"name": "Produtos Info Produtos Controller.patch",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -58241290.60294605,\n    \"idProduto\": -20281998.956568435,\n    \"dataCompra\": \"1978-05-31T07:31:48.001Z\",\n    \"dataValidade\": \"1980-06-02T04:30:11.870Z\",\n    \"compradoPor\": 92395881.71696463,\n    \"compradoA\": 49560976.05195263,\n    \"precoNormal\": 88384767.35424373,\n    \"armazenadoEm\": 38904054.58415857\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id/info-produtos?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id",
+												"info-produtos"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Produtos.InfoProdutos PATCH success count",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"id\": -58241290.60294605,\n    \"idProduto\": -20281998.956568435,\n    \"dataCompra\": \"1978-05-31T07:31:48.001Z\",\n    \"dataValidade\": \"1980-06-02T04:30:11.870Z\",\n    \"compradoPor\": 92395881.71696463,\n    \"compradoA\": 49560976.05195263,\n    \"precoNormal\": 88384767.35424373,\n    \"armazenadoEm\": 38904054.58415857\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/produtos/:id/info-produtos?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"produtos",
+														":id",
+														"info-produtos"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": 97401736.57016325\n}"
+										}
+									]
+								},
+								{
+									"name": "Produtos Info Produtos Controller.find",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id/info-produtos?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id",
+												"info-produtos"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Array of Produtos has many InfoProdutos",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/produtos/:id/info-produtos?filter=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"produtos",
+														":id",
+														"info-produtos"
+													],
+													"query": [
+														{
+															"key": "filter",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n {\n  \"idProduto\": -55714009.703244336,\n  \"id\": 17031043.92275016,\n  \"dataCompra\": \"1973-05-24T08:56:39.551Z\",\n  \"dataValidade\": \"1957-10-01T23:57:38.789Z\",\n  \"compradoPor\": 90462795.48733243,\n  \"compradoA\": -2495366.5682309717,\n  \"precoNormal\": -98698038.0592406,\n  \"armazenadoEm\": 46644164.44046968\n },\n {\n  \"idProduto\": 84145047.0019235,\n  \"id\": -98762786.22365797,\n  \"dataCompra\": \"2007-07-18T12:31:12.539Z\",\n  \"dataValidade\": \"1996-09-10T09:48:48.634Z\",\n  \"compradoPor\": 63720278.00692198,\n  \"compradoA\": -47296771.61381192,\n  \"precoNormal\": -89480904.97514176,\n  \"armazenadoEm\": -45883889.910812534\n }\n]"
+										}
+									]
+								},
+								{
+									"name": "Produtos Info Produtos Controller.delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id/info-produtos?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id",
+												"info-produtos"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Produtos.InfoProdutos DELETE success count",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/produtos/:id/info-produtos?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"produtos",
+														":id",
+														"info-produtos"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": 97401736.57016325\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Produtos Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Ut reprehenderit offi\",\n    \"categoriaID\": -20699466.591325685,\n    \"idProduto\": 42324091.25748137,\n    \"listaProdutosID\": -59485660.52262376\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"Ut reprehenderit offi\",\n    \"categoriaID\": -20699466.591325685,\n    \"idProduto\": 42324091.25748137,\n    \"listaProdutosID\": -59485660.52262376\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Produtos Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idProduto\": 63273163.94081169,\n    \"nome\": \"adipisicing ad culpa in\",\n    \"categoriaID\": -22140189.10196565,\n    \"listaProdutosID\": 75827146.96070191\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idProduto\": 63273163.94081169,\n    \"nome\": \"adipisicing ad culpa in\",\n    \"categoriaID\": -22140189.10196565,\n    \"listaProdutosID\": 75827146.96070191\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Produtos Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/produtos/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Produtos model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"nome\": \"velit ad lab\",\n \"categoriaID\": 68045942.26951402,\n \"idProduto\": 42573764.902706206,\n \"listaProdutosID\": -18120326.824139223,\n \"infoProdutos\": [\n  {\n   \"idProduto\": 33013755.863549575,\n   \"id\": -92780640.09348008,\n   \"dataCompra\": \"1961-04-17T16:49:33.198Z\",\n   \"dataValidade\": \"2014-09-16T07:32:50.369Z\",\n   \"compradoPor\": 95309467.87119633,\n   \"compradoA\": -16857548.16329688,\n   \"precoNormal\": 34716695.75874913,\n   \"armazenadoEm\": 78312225.69181299,\n   \"armazem\": {\n    \"nome\": {\n     \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"idSeccao\": {\n     \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"descricao\": {\n     \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"imagem\": {\n     \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    }\n   }\n  },\n  {\n   \"idProduto\": 5038464.959644169,\n   \"id\": -21417104.006741643,\n   \"dataCompra\": \"1961-01-05T07:36:07.973Z\",\n   \"dataValidade\": \"1982-09-14T15:37:45.936Z\",\n   \"compradoPor\": -19898787.81271383,\n   \"compradoA\": -58524435.17944077,\n   \"precoNormal\": 69741708.58717331,\n   \"armazenadoEm\": -72712310.8082456,\n   \"armazem\": {\n    \"nome\": {\n     \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"idSeccao\": {\n     \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"descricao\": {\n     \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"imagem\": {\n     \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    }\n   }\n  }\n ],\n \"listaProdutos\": {\n  \"nome\": \"et\",\n  \"id\": -5761292.0164862275,\n  \"utilizadoresId\": -56151533.80860036,\n  \"produtos\": [\n   {\n    \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n   },\n   {\n    \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n   }\n  ]\n }\n}"
+								}
+							]
+						},
+						{
+							"name": "Produtos Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Produtos Lista Produtos Controller.get Lista Produtos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/produtos/:id/lista-produtos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos",
+										":id",
+										"lista-produtos"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ListaProdutos belonging to Produtos",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id/lista-produtos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id",
+												"lista-produtos"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n {\n  \"nome\": \"elit enim nostrud\",\n  \"id\": 68647002.06464943,\n  \"utilizadoresId\": 41335812.581154704\n },\n {\n  \"nome\": \"quis dolore\",\n  \"id\": 32700943.539294288,\n  \"utilizadoresId\": -90387039.69154756\n }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Produtos Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"non dolor esse nostrud\",\n    \"categoriaID\": 49679663.16515225,\n    \"listaProdutosID\": 64941051.91338354\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/produtos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Produtos model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"non dolor esse nostrud\",\n    \"categoriaID\": 49679663.16515225,\n    \"listaProdutosID\": 64941051.91338354\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/produtos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"nome\": \"Ut reprehenderit offi\",\n \"categoriaID\": -20699466.591325685,\n \"idProduto\": 42324091.25748137,\n \"listaProdutosID\": -59485660.52262376\n}"
+						}
+					]
+				},
+				{
+					"name": "Produtos Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idProduto\": 63273163.94081169,\n    \"nome\": \"adipisicing ad culpa in\",\n    \"categoriaID\": -22140189.10196565,\n    \"listaProdutosID\": 75827146.96070191\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/produtos?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"produtos"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Produtos PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idProduto\": 63273163.94081169,\n    \"nome\": \"adipisicing ad culpa in\",\n    \"categoriaID\": -22140189.10196565,\n    \"listaProdutosID\": 75827146.96070191\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/produtos?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				},
+				{
+					"name": "Produtos Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/produtos?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"produtos"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Produtos model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/produtos?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"nome\": \"commodo tempor \",\n  \"categoriaID\": -72197153.2966907,\n  \"idProduto\": -969825.2835143209,\n  \"listaProdutosID\": -13682947.509925783,\n  \"infoProdutos\": [\n   {\n    \"idProduto\": -93762617.38755894,\n    \"id\": -22463532.783153936,\n    \"dataCompra\": \"2001-01-14T09:39:57.724Z\",\n    \"dataValidade\": \"1953-10-16T03:48:27.158Z\",\n    \"compradoPor\": 77643862.23936245,\n    \"compradoA\": 60111156.49874705,\n    \"precoNormal\": 69377427.46170595,\n    \"armazenadoEm\": -37138277.733788125,\n    \"armazem\": {\n     \"nome\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"idSeccao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"descricao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"imagem\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    }\n   },\n   {\n    \"idProduto\": 83910212.13262656,\n    \"id\": 20302418.398492247,\n    \"dataCompra\": \"2008-10-02T03:05:57.821Z\",\n    \"dataValidade\": \"1995-01-11T21:47:58.911Z\",\n    \"compradoPor\": -46079485.9552704,\n    \"compradoA\": -2586388.018660739,\n    \"precoNormal\": -3502522.947347805,\n    \"armazenadoEm\": -44291788.03462697,\n    \"armazem\": {\n     \"nome\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"idSeccao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"descricao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"imagem\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    }\n   }\n  ],\n  \"listaProdutos\": {\n   \"nome\": \"sed Duis in deserunt\",\n   \"id\": -92646669.90387797,\n   \"utilizadoresId\": -82669176.39208162,\n   \"produtos\": [\n    {\n     \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n    },\n    {\n     \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n    }\n   ]\n  }\n },\n {\n  \"nome\": \"ipsum\",\n  \"categoriaID\": -96397412.00340341,\n  \"idProduto\": 55765135.95459497,\n  \"listaProdutosID\": 39733732.65489504,\n  \"infoProdutos\": [\n   {\n    \"idProduto\": -82536587.91817275,\n    \"id\": -7638833.806828111,\n    \"dataCompra\": \"1958-01-27T05:21:12.810Z\",\n    \"dataValidade\": \"1942-12-05T22:20:48.395Z\",\n    \"compradoPor\": -69765962.23536858,\n    \"compradoA\": -99478862.61847478,\n    \"precoNormal\": 32280802.264204755,\n    \"armazenadoEm\": -47795125.463432476,\n    \"armazem\": {\n     \"nome\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"idSeccao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"descricao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"imagem\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    }\n   },\n   {\n    \"idProduto\": 78916979.99777308,\n    \"id\": -30421337.957717627,\n    \"dataCompra\": \"2002-02-15T03:36:16.679Z\",\n    \"dataValidade\": \"1952-10-27T16:03:48.263Z\",\n    \"compradoPor\": -87372244.28054549,\n    \"compradoA\": -62123484.51167733,\n    \"precoNormal\": 79542085.8350997,\n    \"armazenadoEm\": -51945486.94839454,\n    \"armazem\": {\n     \"nome\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"idSeccao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"descricao\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"imagem\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    }\n   }\n  ],\n  \"listaProdutos\": {\n   \"nome\": \"quis cillum veniam et\",\n   \"id\": 94278208.73946372,\n   \"utilizadoresId\": -29945730.51734233,\n   \"produtos\": [\n    {\n     \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n    },\n    {\n     \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n    }\n   ]\n  }\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Produtos Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/produtos/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"produtos",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Produtos model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/produtos/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "seccaos",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Seccao Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Ut aliqua deserunt id\",\n    \"idSeccao\": -40880649.1407133,\n    \"descricao\": \"ipsum laborum\",\n    \"imagem\": \"et eiusmod culpa ex \"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/seccaos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seccaos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"Ut aliqua deserunt id\",\n    \"idSeccao\": -40880649.1407133,\n    \"descricao\": \"ipsum laborum\",\n    \"imagem\": \"et eiusmod culpa ex \"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/seccaos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"seccaos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Seccao Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idSeccao\": 97930909.71837652,\n    \"nome\": \"sit incididunt\",\n    \"descricao\": \"minim non in reprehenderit\",\n    \"imagem\": \"commodo anim\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/seccaos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seccaos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idSeccao\": 97930909.71837652,\n    \"nome\": \"sit incididunt\",\n    \"descricao\": \"minim non in reprehenderit\",\n    \"imagem\": \"commodo anim\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/seccaos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"seccaos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Seccao Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/seccaos/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seccaos",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Seccao model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/seccaos/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"seccaos",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"nome\": \"culpa ad\",\n \"idSeccao\": -47232752.10648379,\n \"descricao\": \"fugiat cupidatat ullamco\",\n \"imagem\": \"laborum sed\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Seccao Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/seccaos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seccaos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/seccaos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"seccaos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Seccao Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"est reprehenderit pariatur sed\",\n    \"descricao\": \"aute Ut dolor\",\n    \"imagem\": \"qui do in dolor dolor\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/seccaos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"seccaos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Seccao model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"est reprehenderit pariatur sed\",\n    \"descricao\": \"aute Ut dolor\",\n    \"imagem\": \"qui do in dolor dolor\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/seccaos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seccaos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"nome\": \"Ut aliqua deserunt id\",\n \"idSeccao\": -40880649.1407133,\n \"descricao\": \"ipsum laborum\",\n \"imagem\": \"et eiusmod culpa ex \"\n}"
+						}
+					]
+				},
+				{
+					"name": "Seccao Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idSeccao\": 97930909.71837652,\n    \"nome\": \"sit incididunt\",\n    \"descricao\": \"minim non in reprehenderit\",\n    \"imagem\": \"commodo anim\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/seccaos?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"seccaos"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Seccao PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idSeccao\": 97930909.71837652,\n    \"nome\": \"sit incididunt\",\n    \"descricao\": \"minim non in reprehenderit\",\n    \"imagem\": \"commodo anim\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/seccaos?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seccaos"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				},
+				{
+					"name": "Seccao Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/seccaos?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"seccaos"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Seccao model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/seccaos?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seccaos"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"nome\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  },\n  \"idSeccao\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  },\n  \"descricao\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  },\n  \"imagem\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  }\n },\n {\n  \"nome\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  },\n  \"idSeccao\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  },\n  \"descricao\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  },\n  \"imagem\": {\n   \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n  }\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Seccao Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/seccaos/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"seccaos",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Seccao model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/seccaos/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seccaos",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "utilizadores",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "lista-produtos",
+							"item": [
+								{
+									"name": "Utilizadores Lista Produtos Controller.create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"adipisicing consectetur esse elit\",\n    \"utilizadoresId\": -45127876.683383\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/utilizadores/:id/lista-produtos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadores",
+												":id",
+												"lista-produtos"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "create a ListaProdutos model instance",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"nome\": \"adipisicing consectetur esse elit\",\n    \"utilizadoresId\": -45127876.683383\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/utilizadores/:id/lista-produtos",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"utilizadores",
+														":id",
+														"lista-produtos"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"nome\": \"occaecat nostrud nulla in incididunt\",\n \"id\": -37672575.50193723,\n \"utilizadoresId\": -85800889.07035503\n}"
+										}
+									]
+								},
+								{
+									"name": "Utilizadores Lista Produtos Controller.patch",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -13275329.958368465,\n    \"nome\": \"voluptate proident\",\n    \"utilizadoresId\": -67539534.95825842\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/utilizadores/:id/lista-produtos?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadores",
+												":id",
+												"lista-produtos"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Utilizadores.ListaProdutos PATCH success count",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"id\": -13275329.958368465,\n    \"nome\": \"voluptate proident\",\n    \"utilizadoresId\": -67539534.95825842\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/utilizadores/:id/lista-produtos?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"utilizadores",
+														":id",
+														"lista-produtos"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": 97401736.57016325\n}"
+										}
+									]
+								},
+								{
+									"name": "Utilizadores Lista Produtos Controller.find",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/utilizadores/:id/lista-produtos?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadores",
+												":id",
+												"lista-produtos"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Array of Utilizadores has many ListaProdutos through ListasUtilizador",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/utilizadores/:id/lista-produtos?filter=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"utilizadores",
+														":id",
+														"lista-produtos"
+													],
+													"query": [
+														{
+															"key": "filter",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n {\n  \"nome\": \"elit enim nostrud\",\n  \"id\": 68647002.06464943,\n  \"utilizadoresId\": 41335812.581154704\n },\n {\n  \"nome\": \"quis dolore\",\n  \"id\": 32700943.539294288,\n  \"utilizadoresId\": -90387039.69154756\n }\n]"
+										}
+									]
+								},
+								{
+									"name": "Utilizadores Lista Produtos Controller.delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/utilizadores/:id/lista-produtos?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadores",
+												":id",
+												"lista-produtos"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "89585206.3381049",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Utilizadores.ListaProdutos DELETE success count",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/utilizadores/:id/lista-produtos?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"utilizadores",
+														":id",
+														"lista-produtos"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": 97401736.57016325\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Utilizadores Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"fugiat\",\n    \"email\": \"dolor\",\n    \"password\": \"pariatur aute\",\n    \"id\": 3102196.213960305,\n    \"isPremium\": false\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/utilizadores/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadores",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"fugiat\",\n    \"email\": \"dolor\",\n    \"password\": \"pariatur aute\",\n    \"id\": 3102196.213960305,\n    \"isPremium\": false\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/utilizadores/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadores",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Utilizadores Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": -71077491.09960903,\n    \"nome\": \"Lorem id dolor\",\n    \"email\": \"dolor magna fugiat\",\n    \"password\": \"deserunt consectet\",\n    \"isPremium\": true\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/utilizadores/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadores",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -71077491.09960903,\n    \"nome\": \"Lorem id dolor\",\n    \"email\": \"dolor magna fugiat\",\n    \"password\": \"deserunt consectet\",\n    \"isPremium\": true\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/utilizadores/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadores",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Utilizadores Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/utilizadores/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadores",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Utilizadores model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/utilizadores/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadores",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"nome\": \"labore dolore nostrud\",\n \"email\": \"pariatur labore reprehenderit\",\n \"password\": \"anim in\",\n \"id\": 80601584.56758648,\n \"isPremium\": false,\n \"listaProdutos\": [\n  {\n   \"nome\": \"dolor fugiat\",\n   \"id\": 28302910.34863776,\n   \"utilizadoresId\": 87041498.3860682,\n   \"produtos\": [\n    {\n     \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n    },\n    {\n     \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n    }\n   ]\n  },\n  {\n   \"nome\": \"consectetur in laboris dolor\",\n   \"id\": 22926604.643391892,\n   \"utilizadoresId\": 37508898.06954664,\n   \"produtos\": [\n    {\n     \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n    },\n    {\n     \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n    }\n   ]\n  }\n ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Utilizadores Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/utilizadores/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadores",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "89585206.3381049",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/utilizadores/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadores",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Utilizadores Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"fugia\",\n    \"email\": \"non\",\n    \"password\": \"mollit amet\",\n    \"isPremium\": false\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/utilizadores",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"utilizadores"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Utilizadores model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"fugia\",\n    \"email\": \"non\",\n    \"password\": \"mollit amet\",\n    \"isPremium\": false\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/utilizadores",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadores"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"nome\": \"fugiat\",\n \"email\": \"dolor\",\n \"password\": \"pariatur aute\",\n \"id\": 3102196.213960305,\n \"isPremium\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "Utilizadores Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": -71077491.09960903,\n    \"nome\": \"Lorem id dolor\",\n    \"email\": \"dolor magna fugiat\",\n    \"password\": \"deserunt consectet\",\n    \"isPremium\": true\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/utilizadores?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"utilizadores"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Utilizadores PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": -71077491.09960903,\n    \"nome\": \"Lorem id dolor\",\n    \"email\": \"dolor magna fugiat\",\n    \"password\": \"deserunt consectet\",\n    \"isPremium\": true\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/utilizadores?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadores"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				},
+				{
+					"name": "Utilizadores Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/utilizadores?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"utilizadores"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Utilizadores model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/utilizadores?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadores"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"nome\": \"Lorem Excepteur dolor\",\n  \"email\": \"ut Lorem\",\n  \"password\": \"sunt dolore consectetur\",\n  \"id\": -51894763.80668428,\n  \"isPremium\": true,\n  \"listaProdutos\": [\n   {\n    \"nome\": \"c\",\n    \"id\": 14722978.79084596,\n    \"utilizadoresId\": 37534062.601929605,\n    \"produtos\": [\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     },\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     }\n    ]\n   },\n   {\n    \"nome\": \"in ut do\",\n    \"id\": 5030228.947884917,\n    \"utilizadoresId\": -62265845.3336864,\n    \"produtos\": [\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     },\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     }\n    ]\n   }\n  ]\n },\n {\n  \"nome\": \"consequat qui\",\n  \"email\": \"veniam Lorem\",\n  \"password\": \"in\",\n  \"id\": 88140469.28127688,\n  \"isPremium\": false,\n  \"listaProdutos\": [\n   {\n    \"nome\": \"exercitation officia sint\",\n    \"id\": -53418446.16211837,\n    \"utilizadoresId\": -41938073.69099259,\n    \"produtos\": [\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     },\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     }\n    ]\n   },\n   {\n    \"nome\": \"non cillum\",\n    \"id\": 40935637.16052136,\n    \"utilizadoresId\": -74674554.25879006,\n    \"produtos\": [\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     },\n     {\n      \"value\": \"<Circular reference to #/components/schemas/ProdutosWithRelations detected>\"\n     }\n    ]\n   }\n  ]\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Utilizadores Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/utilizadores/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"utilizadores",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Utilizadores model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/utilizadores/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadores",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": 97401736.57016325\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ping Controller.ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/ping",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Ping Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/ping",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ping"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"greeting\": \"ullamco Ut elit amet culpa\",\n \"date\": \"Duis veniam in\",\n \"url\": \"cillum id\",\n \"headers\": {\n  \"Content-Type\": \"irure\"\n }\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://[::1]:3000",
+			"type": "string"
+		}
+	]
+}
