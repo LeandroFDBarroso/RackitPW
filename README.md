@@ -32,13 +32,13 @@ Pagina Inicial |  Explorer
 ## Report
 
 ### Apresentação do Projeto
-* Chapter 1: [Project presentation](https://github.com/RackITPW/report/blob/main/docs/c1.md)
+* 1: [Apresentação do Projeto](https://github.com/RackITPW/report/blob/main/docs/c1.md)
 ### User Interface 
-* Chapter 2: [User Interface Prototype and Sitemap](https://github.com/RackITPW/report/blob/main/docs/c2.md)
+* 2: [User Interface ](https://github.com/RackITPW/report/blob/main/docs/c2.md)
 ### Produto
-* Chapter 3: [Product](https://github.com/RackITPW/report/blob/main/docs/c3.md)
+* 3: [Produto](https://github.com/RackITPW/report/blob/main/docs/c3.md)
 ### Apresentação
-* Chapter 4: [Presentation](https://github.com/RackITPW/report/blob/main/docs/c4.md)
+* 4: [Apresentação](https://github.com/RackITPW/report/blob/main/docs/c4.md)
 
 ## Equipa Responsavel
 * Diogo Pereira A036751 [@diogopereira00](https://github.com/diogopereira00)
