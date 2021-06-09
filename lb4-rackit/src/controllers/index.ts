@@ -6,3 +6,5 @@ export * from './produtos-categorias.controller';
 export * from './categorias.controller';
 export * from './produtos-info-produto.controller';
 export * from './info-produto-armazem.controller';
+export * from './info-produtos.controller';
+export * from './lista-produtos.controller';
