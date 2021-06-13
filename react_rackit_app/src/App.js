@@ -24,33 +24,77 @@
 
 // export default App;
 
-import { Admin, Resource, ListGuesser, EditGuesser } from "react-admin";
+import {
+	Admin,
+	Resource,
+	ListGuesser,
+	EditGuesser,
+	Edit,
+	ShowGuesser,
+} from "react-admin";
 import lb4Provider from "react-admin-lb4";
+import {
+	InfoProdutoCreate,
+	InfoProdutoEdit,
+	InfoProdutoList,
+} from "./Infoprodutos";
 import { ListaProdutoEdit, ListaProdutosList } from "./listaprodutosList";
-import { ProdutoEdit, ProdutoList } from "./produtos";
+import { ProdutoEdit, ProdutoList, ProdutoCreate } from "./produtos";
 import {
 	UtilizadoreCreate,
 	UtilizadoreEdit,
 	UtilizadoreList,
 } from "./utilizadoresList";
+import PersonIcon from "@material-ui/icons/Person";
+import ListIcon from "@material-ui/icons/List";
+import CategoryIcon from "@material-ui/icons/Category";
+import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import InfoIcon from "@material-ui/icons/Info";
+import StorageIcon from "@material-ui/icons/Storage";
+import { Teste } from "./teste";
+import {
+	ProdutosCategoriaEdit,
+	ProdutosCategoriaList,
+} from "./produtoscategorias";
+import Dashboard from "./Dashboard";
 const dataProvider = lb4Provider("http://localhost:3000");
 const App = () => (
-	<Admin dataProvider={dataProvider}>
+	<Admin dashboard={Dashboard} dataProvider={dataProvider}>
 		<Resource
+			icon={PersonIcon}
 			name="utilizadores"
 			list={UtilizadoreList}
 			edit={UtilizadoreEdit}
 			create={UtilizadoreCreate}
 		/>
 		<Resource
+			icon={ShoppingBasketIcon}
 			name="lista-produtos"
 			list={ListaProdutosList}
 			edit={ListaProdutoEdit}
 		/>
 
-		<Resource name="produtos" list={ProdutoList} edit={ProdutoEdit} />
-		<Resource name="categorias" list={ListGuesser} />
-		<Resource name="info-produtos" list={ListGuesser} />
+		<Resource
+			icon={ListIcon}
+			name="produtos"
+			list={ProdutoList}
+			edit={ProdutoEdit}
+			create={ProdutoCreate}
+		/>
+		<Resource name="categorias" list={ListGuesser} icon={CategoryIcon} />
+		<Resource
+			icon={InfoIcon}
+			name="info-produtos"
+			list={InfoProdutoList}
+			edit={InfoProdutoEdit}
+			create={InfoProdutoCreate}
+		/>
+		<Resource name="armazems" list={ListGuesser} icon={StorageIcon} />
+		<Resource
+			name="produtos-categorias"
+			list={ProdutosCategoriaList}
+			edit={ProdutosCategoriaEdit}
+		/>
 	</Admin>
 );
 export default App;

@@ -8,3 +8,6 @@ export * from './produtos-info-produto.controller';
 export * from './info-produto-armazem.controller';
 export * from './info-produtos.controller';
 export * from './lista-produtos.controller';
+export * from './armazem-controller.controller';
+export * from './produtoscategorias.controller';
+export * from './utilizadores-lista.controller';

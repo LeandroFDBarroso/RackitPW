@@ -14,13 +14,14 @@ import {
 	Create,
 	PasswordInput,
 } from "react-admin";
+
 export const UtilizadoreList = (props) => (
 	<List {...props}>
 		<Datagrid>
 			<NumberField source="id" />
 			<TextField source="nome" />
 			<EmailField source="email" />
-			<TextField source="password" />
+			{/* <TextField source="password" /> */}
 			<BooleanField source="isPremium" />
 			<EditButton />
 		</Datagrid>
