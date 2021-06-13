@@ -27,6 +27,26 @@ const InfoProdutosFilter = (props) => (
 		>
 			<SelectInput optionText="nome" />
 		</ReferenceInput>
+		<ReferenceInput
+			label="Comprado por"
+			source="compradoPor"
+			reference="utilizadores"
+			perPage={100}
+			sort={{ field: "id", order: "ASC" }}
+			allowEmpty
+		>
+			<SelectInput optionText="nome" />
+		</ReferenceInput>
+		<ReferenceInput
+			label="Armazenado"
+			source="armazemId"
+			reference="produtos"
+			perPage={100}
+			sort={{ field: "id", order: "ASC" }}
+			allowEmpty
+		>
+			<SelectInput optionText="nome" />
+		</ReferenceInput>
 	</Filter>
 );
 export const InfoProdutoList = (props) => (
@@ -36,15 +56,30 @@ export const InfoProdutoList = (props) => (
 			<DateField source="dataCompra" />
 			<DateField source="dataValidade" />
 			{/* <NumberField source="compradoPor" /> */}
-			<ReferenceField source="compradoPor" reference="utilizadores">
+			<ReferenceField
+				source="compradoPor"
+				reference="utilizadores"
+				perPage={100}
+				sort={{ field: "id", order: "ASC" }}
+			>
 				<TextField source="nome" />
 			</ReferenceField>
 			<NumberField source="precoCompra" />
 			<NumberField source="precoNormal" />
-			<ReferenceField source="produtosId" reference="produtos">
+			<ReferenceField
+				source="produtosId"
+				reference="produtos"
+				perPage={100}
+				sort={{ field: "id", order: "ASC" }}
+			>
 				<TextField source="nome" />
 			</ReferenceField>
-			<ReferenceField source="armazemId" reference="armazems">
+			<ReferenceField
+				source="armazemId"
+				reference="armazems"
+				perPage={100}
+				sort={{ field: "id", order: "ASC" }}
+			>
 				<TextField source="nome" />
 			</ReferenceField>
 			<EditButton />

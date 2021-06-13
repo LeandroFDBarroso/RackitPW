@@ -13,10 +13,38 @@ import {
 	BooleanInput,
 	Create,
 	PasswordInput,
+	Filter,
+	ReferenceInput,
+	SelectInput,
 } from "react-admin";
+const UtilizadoresListaProdutosFilter = (props) => (
+	<Filter {...props}>
+		<TextInput source="nome" alwaysOn />
+		<TextInput source="email" />
 
+		<ReferenceInput
+			label="Premium"
+			source="isPremium"
+			reference="utilizadores"
+			perPage={100}
+			sort={{ field: "id", order: "ASC" }}
+			allowEmpty
+		>
+			<BooleanInput />
+		</ReferenceInput>
+		{/* <ReferenceInput
+			label="Produtos"
+			source="nome"
+			reference="produtos"
+			perPage={100}
+			allowEmpty
+		>
+			<SelectInput optionText="nome" />
+		</ReferenceInput> */}
+	</Filter>
+);
 export const UtilizadoreList = (props) => (
-	<List {...props}>
+	<List filters={<UtilizadoresListaProdutosFilter />} {...props}>
 		<Datagrid>
 			<NumberField source="id" />
 			<TextField source="nome" />

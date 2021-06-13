@@ -14,10 +14,6 @@ import {
 	Create,
 } from "react-admin";
 
-const PostTitle = ({ record }) => (
-	<span>Aula {record ? `"${record.subject}"` : ""}</span>
-);
-
 const ProdutosFilter = (props) => (
 	<Filter {...props}>
 		<TextInput source="nome" alwaysOn />
@@ -97,6 +93,7 @@ export const ProdutoEdit = (props) => (
 		</SimpleForm>
 	</Edit>
 );
+
 export const ProdutoCreate = (props) => {
 	return (
 		<Create title="Criar um Produto" {...props}>

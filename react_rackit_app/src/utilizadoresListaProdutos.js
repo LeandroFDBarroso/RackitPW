@@ -1,68 +1,69 @@
 import {
 	Datagrid,
+	Edit,
+	EditButton,
 	List,
 	ReferenceField,
 	TextField,
-	EditButton,
-	Edit,
 	SimpleForm,
 	TextInput,
 	ReferenceInput,
 	SelectInput,
-	Filter,
 	Create,
+	Filter,
 } from "react-admin";
-const ProdutosCategoriasFilter = (props) => (
+const UtilizadoresListaProdutosFilter = (props) => (
 	<Filter {...props}>
-		<TextInput source="nome" alwaysOn />
 		<ReferenceInput
+			label="Lista Produtos"
+			source="listaProdutosId"
+			reference="lista-produtos"
+			perPage={100}
+			sort={{ field: "id", order: "ASC" }}
+			allowEmpty
+		>
+			<SelectInput optionText="nome" />
+		</ReferenceInput>
+		<ReferenceInput
+			label="Utilizadores"
+			source="utilizadoresId"
+			reference="utilizadores"
+			perPage={100}
+			sort={{ field: "id", order: "ASC" }}
+			allowEmpty
+		>
+			<SelectInput optionText="nome" />
+		</ReferenceInput>
+		{/* <ReferenceInput
 			label="Produtos"
-			source="produtosId"
+			source="nome"
 			reference="produtos"
 			perPage={100}
-			sort={{ field: "id", order: "ASC" }}
 			allowEmpty
 		>
 			<SelectInput optionText="nome" />
-		</ReferenceInput>
-
-		<ReferenceInput
-			label="Categorias"
-			source="categoriasId"
-			reference="categorias"
-			perPage={100}
-			sort={{ field: "id", order: "ASC" }}
-			allowEmpty
-		>
-			<SelectInput optionText="nome" />
-		</ReferenceInput>
+		</ReferenceInput> */}
 	</Filter>
 );
-export const ProdutosCategoriaList = (props) => (
-	<List filters={<ProdutosCategoriasFilter />} {...props}>
+export const UtilizadoresListaProdutoList = (props) => (
+	<List filters={<UtilizadoresListaProdutosFilter />} {...props}>
 		<Datagrid rowClick="edit">
 			<TextField source="id" />
+			<TextField source="utilizadoresId" label="Utilizadores ID" />
+			<TextField source="listaProdutosId" label="Lista Produtos ID" />
 			<ReferenceField
-				source="produtosId"
-				reference="produtos"
-				label="produtosId"
+				source="utilizadoresId"
+				reference="utilizadores"
+				perPage={100}
+				sort={{ field: "id", order: "ASC" }}
 			>
-				<TextField source="id" />
-			</ReferenceField>
-			<ReferenceField
-				source="categoriasId"
-				reference="categorias"
-				label="categoriasId"
-			>
-				<TextField source="id" />
-			</ReferenceField>
-			<ReferenceField source="produtosId" reference="produtos">
 				<TextField source="nome" />
 			</ReferenceField>
 			<ReferenceField
-				source="categoriasId"
-				reference="categorias"
-				label="nomeCategoria"
+				source="listaProdutosId"
+				reference="lista-produtos"
+				perPage={100}
+				sort={{ field: "id", order: "ASC" }}
 			>
 				<TextField source="nome" />
 			</ReferenceField>
@@ -71,23 +72,22 @@ export const ProdutosCategoriaList = (props) => (
 	</List>
 );
 
-export const ProdutosCategoriaEdit = (props) => (
+export const UtilizadoresListaProdutoEdit = (props) => (
 	<Edit {...props}>
 		<SimpleForm>
-			<TextInput source="id" />
 			<ReferenceInput
-				source="produtosId"
-				reference="produtos"
+				source="utilizadoresId"
+				reference="utilizadores"
+				perPage={100}
 				sort={{ field: "id", order: "ASC" }}
-				allowEmpty
 			>
 				<SelectInput optionText="nome" />
 			</ReferenceInput>
 			<ReferenceInput
-				source="categoriasId"
-				reference="categorias"
+				source="listaProdutosId"
+				reference="lista-produtos"
+				perPage={100}
 				sort={{ field: "id", order: "ASC" }}
-				allowEmpty
 			>
 				<SelectInput optionText="nome" />
 			</ReferenceInput>
@@ -95,23 +95,22 @@ export const ProdutosCategoriaEdit = (props) => (
 	</Edit>
 );
 
-export const ProdutosCategoriaCreate = (props) => (
+export const UtilizadoresListaProdutoCreate = (props) => (
 	<Create {...props}>
 		<SimpleForm>
-			<TextInput source="id" />
 			<ReferenceInput
-				source="produtosId"
-				reference="produtos"
+				source="utilizadoresId"
+				reference="utilizadores"
+				perPage={100}
 				sort={{ field: "id", order: "ASC" }}
-				allowEmpty
 			>
 				<SelectInput optionText="nome" />
 			</ReferenceInput>
 			<ReferenceInput
-				source="categoriasId"
-				reference="categorias"
+				source="listaProdutosId"
+				reference="lista-produtos"
+				perPage={100}
 				sort={{ field: "id", order: "ASC" }}
-				allowEmpty
 			>
 				<SelectInput optionText="nome" />
 			</ReferenceInput>
