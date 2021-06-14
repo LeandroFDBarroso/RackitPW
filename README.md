@@ -10,10 +10,10 @@ A RackIT é um sistema de gestão de inventario doméstico feito para facilitar 
 * Pode encontrar outros documentos importantes em **docs** em [docs](https://github.com/RackITPW/report/tree/main/docs).
 
 ## Galeria
-| | | 
-:---: | :---: |
-![Inicial](https://github.com/RackITPW/report/blob/main/docs/images/inicial.png) | ![Imagem1](https://github.com/RackITPW/report/blob/main/docs/images/1.png) 
-Pagina Inicial |  Explorer
+| | | |
+:---: | :---: |  :---: |
+![Inicial](https://github.com/RackITPW/report/blob/main/docs/images/inicial.png) | ![Imagem1](https://github.com/RackITPW/report/blob/main/docs/images/1.png) | ![Imagem2](https://github.com/RackITPW/report/blob/main/docs/images/dashboardReact.PNG)
+Pagina Inicial |  Explorer API | React Dashboard
 ## Tecnologias
 * XML
 * HTML5 + CSS3
