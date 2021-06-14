@@ -30,7 +30,6 @@ export const ArmazemList = (props) => (
 export const ArmazemEdit = (props) => (
 	<Edit {...props}>
 		<SimpleForm>
-			<TextInput source="id" />
 			<TextInput source="nome" />
 			<TextInput source="descricao" />
 			<TextInput source="imagem" />
@@ -42,7 +41,6 @@ export const ArmazemEdit = (props) => (
 export const ArmazemCreate = (props) => (
 	<Create {...props}>
 		<SimpleForm>
-			<TextInput source="id" />
 			<TextInput source="nome" />
 			<TextInput source="descricao" />
 			<TextInput source="imagem" />

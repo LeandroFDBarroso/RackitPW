@@ -74,18 +74,19 @@ export const ProdutosCategoriaList = (props) => (
 export const ProdutosCategoriaEdit = (props) => (
 	<Edit {...props}>
 		<SimpleForm>
-			<TextInput source="id" />
 			<ReferenceInput
 				source="produtosId"
 				reference="produtos"
-				sort={{ field: "id", order: "ASC" }}
 				allowEmpty
+				perPage={100}
+				sort={{ field: "id", order: "ASC" }}
 			>
 				<SelectInput optionText="nome" />
 			</ReferenceInput>
 			<ReferenceInput
 				source="categoriasId"
 				reference="categorias"
+				perPage={100}
 				sort={{ field: "id", order: "ASC" }}
 				allowEmpty
 			>
@@ -98,10 +99,10 @@ export const ProdutosCategoriaEdit = (props) => (
 export const ProdutosCategoriaCreate = (props) => (
 	<Create {...props}>
 		<SimpleForm>
-			<TextInput source="id" />
 			<ReferenceInput
 				source="produtosId"
 				reference="produtos"
+				perPage={100}
 				sort={{ field: "id", order: "ASC" }}
 				allowEmpty
 			>
@@ -110,6 +111,7 @@ export const ProdutosCategoriaCreate = (props) => (
 			<ReferenceInput
 				source="categoriasId"
 				reference="categorias"
+				perPage={100}
 				sort={{ field: "id", order: "ASC" }}
 				allowEmpty
 			>

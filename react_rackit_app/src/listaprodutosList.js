@@ -15,16 +15,6 @@ import {
 const ListaProdutosFilter = (props) => (
 	<Filter {...props}>
 		<TextInput source="nome" alwaysOn />
-		<ReferenceInput
-			label="Lista Produtos"
-			source="listaProdutosId"
-			reference="lista-produtos"
-			perPage={100}
-			sort={{ field: "id", order: "ASC" }}
-			allowEmpty
-		>
-			<SelectInput optionText="nome" />
-		</ReferenceInput>
 
 		{/* <ReferenceInput
 			label="Produtos"
