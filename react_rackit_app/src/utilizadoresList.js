@@ -9,13 +9,11 @@ import {
 	Edit,
 	SimpleForm,
 	TextInput,
-	DateInput,
 	BooleanInput,
 	Create,
 	PasswordInput,
 	Filter,
 	ReferenceInput,
-	SelectInput,
 } from "react-admin";
 const UtilizadoresListaProdutosFilter = (props) => (
 	<Filter {...props}>

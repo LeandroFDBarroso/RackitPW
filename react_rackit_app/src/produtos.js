@@ -66,13 +66,13 @@ export const ProdutoList = (props) => (
 
 				{/* <TextField label="Ver mais informações" source="compradoPor" /> */}
 			</ReferenceField>
-			<ReferenceField
+			{/* <ReferenceField
 				source="id"
 				reference="info-produtos/count?where=%7B%0A%20%20%22produtosId%22%3A%201%0A%7D"
 				label="quantidade"
 			>
 				<TextField source="nome" />
-			</ReferenceField>
+			</ReferenceField> */}
 			<EditButton />
 		</Datagrid>
 	</List>

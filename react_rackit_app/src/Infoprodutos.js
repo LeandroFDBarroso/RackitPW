@@ -13,7 +13,7 @@ import {
 	ReferenceInput,
 	SelectInput,
 } from "ra-ui-materialui";
-import { Create, DateInput, DateTimeInput, NumberInput } from "react-admin";
+import { Create, DateTimeInput, NumberInput } from "react-admin";
 const InfoProdutosFilter = (props) => (
 	<Filter {...props}>
 		<TextInput source="nome" alwaysOn />
@@ -40,7 +40,7 @@ const InfoProdutosFilter = (props) => (
 		<ReferenceInput
 			label="Armazenado"
 			source="armazemId"
-			reference="produtos"
+			reference="armazems"
 			perPage={100}
 			sort={{ field: "id", order: "ASC" }}
 			allowEmpty

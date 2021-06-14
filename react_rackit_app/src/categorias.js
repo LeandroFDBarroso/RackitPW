@@ -7,10 +7,15 @@ import {
 	SimpleForm,
 	TextInput,
 	Create,
+	Filter,
 } from "react-admin";
-
+const CategoriaFilter = (props) => (
+	<Filter {...props}>
+		<TextInput source="nome" alwaysOn />
+	</Filter>
+);
 export const CategoriaList = (props) => (
-	<List {...props}>
+	<List filters={<CategoriaFilter />} {...props}>
 		<Datagrid rowClick="edit">
 			<TextField source="id" />
 			<TextField source="nome" />

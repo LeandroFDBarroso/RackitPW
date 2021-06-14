@@ -1,11 +1,4 @@
-import {
-	Admin,
-	Resource,
-	ListGuesser,
-	EditGuesser,
-	Edit,
-	ShowGuesser,
-} from "react-admin";
+import { Admin, Resource } from "react-admin";
 import lb4Provider from "react-admin-lb4";
 import {
 	InfoProdutoCreate,
@@ -25,14 +18,12 @@ import {
 } from "./utilizadoresList";
 
 import PersonIcon from "@material-ui/icons/Person";
-import ListIcon from "@material-ui/icons/List";
 import CategoryIcon from "@material-ui/icons/Category";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import InfoIcon from "@material-ui/icons/Info";
 import StorageIcon from "@material-ui/icons/Storage";
 import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
 import AllInboxIcon from "@material-ui/icons/AllInbox";
-import { Teste } from "./teste";
 
 import {
 	ProdutosCategoriaCreate,

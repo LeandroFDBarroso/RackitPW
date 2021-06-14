@@ -8,10 +8,15 @@ import {
 	SimpleForm,
 	TextInput,
 	Create,
+	Filter,
 } from "react-admin";
-
+const ArmazemFilter = (props) => (
+	<Filter {...props}>
+		<TextInput source="nome" alwaysOn />
+	</Filter>
+);
 export const ArmazemList = (props) => (
-	<List {...props}>
+	<List filters={<ArmazemFilter />} {...props}>
 		<Datagrid rowClick="edit">
 			<TextField source="id" />
 			<TextField source="nome" />
@@ -29,6 +34,7 @@ export const ArmazemEdit = (props) => (
 			<TextInput source="nome" />
 			<TextInput source="descricao" />
 			<TextInput source="imagem" />
+			<ImageField source="imagem" />
 		</SimpleForm>
 	</Edit>
 );

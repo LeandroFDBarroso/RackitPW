@@ -6,7 +6,6 @@ import {
 	ReferenceField,
 	TextField,
 	SimpleForm,
-	TextInput,
 	ReferenceInput,
 	SelectInput,
 	Create,
