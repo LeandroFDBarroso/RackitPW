@@ -22,8 +22,16 @@ Pagina Inicial |  Explorer
 * MySQL
 * nodeJS
 * Loopback 4
+* React
 
 ### Frameworks e Librarias
+* React
+* React-Admin
+* React-Bootstrap
+* MDBReact
+* React-Chartjs
+* FontAwsome
+* Bootstrap
 * Docker
 * NodeJS
 * JQuery
