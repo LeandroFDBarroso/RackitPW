@@ -45,8 +45,6 @@ Pagina Inicial |  Explorer API | React Dashboard
 * 2: [Interface do Utilizador](https://github.com/RackITPW/report/blob/main/docs/c2.md)
 ### Produto
 * 3: [Produto](https://github.com/RackITPW/report/blob/main/docs/c3.md)
-### Apresentação
-* 4: [Apresentação](https://github.com/RackITPW/report/blob/main/docs/c4.md)
 
 ## Equipa Responsavel
 * Diogo Pereira A036751 [@diogopereira00](https://github.com/diogopereira00)
